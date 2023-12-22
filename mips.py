@@ -188,9 +188,9 @@ def main():
 
     data = list()
     
-    data_method = int(input("Do you want to choose data randomly or not: (enter 1 to select randomly, enter any key or countinue)"))
+    method = int(input("enter 1 to select randomly number, or 0 to enter numbers manuly"))
     
-    if data_method == 1: 
+    if method == 1: 
         data = [random.randint(1, 100) for _ in range(10)]
     else:
         for i in range(10):
@@ -227,8 +227,6 @@ def main():
 
     fum_processor.runOurProgram()
 
-
-    print("------------------")
     print("min: ")
     print(fum_processor.memory[10])
     print("max: ")
@@ -237,5 +235,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-
