@@ -4,6 +4,7 @@ class Mips32:
         self.memory = [0 for _ in range(m_size)]
         self.register = [0 for _ in range(32)]  #32bits general-purpose registers
         self.ProgramCounter = 256
+        
         #utility signal
         #ID/EX:
         ID_EX_MemToReg = 0
@@ -14,7 +15,7 @@ class Mips32:
         ID_EX_RegDst = 0
         ID_EX_AluSrc = 0
         ID_EX_AluOp = 0
-        #EX/MEM:
+        #EX/MEM :
         EX_MEM_MemToReg = 0
         EX_MEM_RegWrite = 0
         EX_MEM_Branch = 0
