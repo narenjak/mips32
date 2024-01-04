@@ -32,10 +32,10 @@ def main():
         "addi 5 5 10",  # 261 -> add 9 to register 5
         "lw 3 0 0",     # 262 -> load element based on counter address
         "slt 4 3 1",    # 263 -> if r3<r1 -> r4 = 1 else 0
-        "beq 4 6 2",    # 264 -> if r4 == r5 -> pc + 2
+        "beq 4 6 2",    # 264 -> if r4 == r6 -> pc + 2
         "lw 1 0 0",     # 265 -> update smallest value
         "slt 4 2 3",    # 266 -> if r2<r3 -> r4 = 1 else 0
-        "beq 4 6 2",    # 267 -> if r4 == r5 -> pc + 2
+        "beq 4 6 2",    # 267 -> if r4 == r6 -> pc + 2
         "lw 2 0 0",     # 268 -> update largest value
         "addi 0 0 1",   # 269 -> counter + 1
         "bne 0 5 -8",   # 270 -> if counter !== 9 countinue loop
